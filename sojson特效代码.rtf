@@ -1,0 +1,189 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf810
+{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red0\green0\blue0;\red15\green114\blue1;
+\red252\green98\blue8;\red0\green0\blue255;\red18\green139\blue2;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c0\c0\c0;\cssrgb\c0\c50980\c0;
+\cssrgb\c100000\c47059\c0;\cssrgb\c0\c0\c100000;\cssrgb\c0\c60000\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \expnd0\expndtw0\kerning0
+http:\cf4 //www.sojson.com/blog/127.html\cf2 \
+\'a0\
+!\'a0function()\'a0\{\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b7\'e2\'d7\'b0\'b7\'bd\'b7\'a8\'a3\'ac\'d1\'b9\'cb\'f5\'d6\'ae\'ba\'f3\'bc\'f5\'c9\'d9\'ce\'c4\'bc\'fe\'b4\'f3\'d0\'a1
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0function\'a0get_attribute(node,\'a0attr,\'a0default_value)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf5 return\cf2 \'a0node.getAttribute(attr)\'a0||\'a0default_value;\
+\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b7\'e2\'d7\'b0\'b7\'bd\'b7\'a8\'a3\'ac\'d1\'b9\'cb\'f5\'d6\'ae\'ba\'f3\'bc\'f5\'c9\'d9\'ce\'c4\'bc\'fe\'b4\'f3\'d0\'a1
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0function\'a0get_by_tagname(name)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf5 return\cf2 \'a0document.getElementsByTagName(name);\
+\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'bb\'f1\'c8\'a1\'c5\'e4\'d6\'c3\'b2\'ce\'ca\'fd
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0function\'a0get_config_option()\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0var\'a0scripts\'a0=\'a0get_by_tagname(\cf6 "script"\cf2 ),\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0script_len\'a0=\'a0scripts.length,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0script\'a0=\'a0scripts[script_len\'a0-\'a0\cf7 1\cf2 ];\'a0\cf4 //
+\f1 \'b5\'b1\'c7\'b0\'bc\'d3\'d4\'d8\'b5\'c4
+\f0 script\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf5 return\cf2 \'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0l:\'a0script_len,\'a0\cf4 //
+\f1 \'b3\'a4\'b6\'c8\'a3\'ac\'d3\'c3\'d3\'da\'c9\'fa\'b3\'c9
+\f0 id
+\f1 \'d3\'c3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0z:\'a0get_attribute(script,\'a0\cf6 "zIndex"\cf2 ,\'a0-\cf7 1\cf2 ),\'a0\cf4 //z-index\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0o:\'a0get_attribute(script,\'a0\cf6 "opacity"\cf2 ,\'a0\cf7 0.5\cf2 ),\'a0\cf4 //opacity\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0c:\'a0get_attribute(script,\'a0\cf6 "color"\cf2 ,\'a0\cf6 "0,0,0"\cf2 ),\'a0\cf4 //color\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0n:\'a0get_attribute(script,\'a0\cf6 "count"\cf2 ,\'a0\cf7 99\cf2 )\'a0\cf4 //count\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\};\
+\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'c9\'e8\'d6\'c3
+\f0 canvas
+\f1 \'b5\'c4\'b8\'df\'bf\'ed
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0function\'a0set_canvas_size()\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0canvas_width\'a0=\'a0the_canvas.width\'a0=\'a0window.innerWidth\'a0||\'a0document.documentElement.clientWidth\'a0||\'a0document.body.clientWidth,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0canvas_height\'a0=\'a0the_canvas.height\'a0=\'a0window.innerHeight\'a0||\'a0document.documentElement.clientHeight\'a0||\'a0document.body.clientHeight;\
+\'a0\'a0\'a0\'a0\}\
+\'a0\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'bb\'e6\'d6\'c6\'b9\'fd\'b3\'cc
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0function\'a0draw_canvas()\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.clearRect(\cf7 0\cf2 ,\'a0\cf7 0\cf2 ,\'a0canvas_width,\'a0canvas_height);\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'cb\'e6\'bb\'fa\'b5\'c4\'cf\'df\'cc\'f5\'ba\'cd\'b5\'b1\'c7\'b0\'ce\'bb\'d6\'c3\'c1\'aa\'ba\'cf\'ca\'fd\'d7\'e9
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0var\'a0all_array\'a0=\'a0[current_point].concat(random_lines);\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0var\'a0e,\'a0i,\'a0d,\'a0x_dist,\'a0y_dist,\'a0dist;\'a0\cf4 //
+\f1 \'c1\'d9\'ca\'b1\'bd\'da\'b5\'e3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b1\'e9\'c0\'fa\'b4\'a6\'c0\'ed\'c3\'bf\'d2\'bb\'b8\'f6\'b5\'e3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0random_lines.forEach(function(r)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0r.x\'a0+=\'a0r.xa,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0r.y\'a0+=\'a0r.ya,\'a0\cf4 //
+\f1 \'d2\'c6\'b6\'af
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0r.xa\'a0*=\'a0r.x\'a0>\'a0canvas_width\'a0||\'a0r.x\'a0<\'a0\cf7 0\cf2 \'a0?\'a0-\cf7 1\cf2 \'a0:\'a0\cf7 1\cf2 ,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0r.ya\'a0*=\'a0r.y\'a0>\'a0canvas_height\'a0||\'a0r.y\'a0<\'a0\cf7 0\cf2 \'a0?\'a0-\cf7 1\cf2 \'a0:\'a0\cf7 1\cf2 ,\'a0\cf4 //
+\f1 \'c5\'f6\'b5\'bd\'b1\'df\'bd\'e7\'a3\'ac\'b7\'b4\'cf\'f2\'b7\'b4\'b5\'af
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.fillRect(r.x\'a0-\'a0\cf7 0.5\cf2 ,\'a0r.y\'a0-\'a0\cf7 0.5\cf2 ,\'a0\cf7 1\cf2 ,\'a0\cf7 1\cf2 );\'a0\cf4 //
+\f1 \'bb\'e6\'d6\'c6\'d2\'bb\'b8\'f6\'bf\'ed\'b8\'df\'ce\'aa
+\f0 1
+\f1 \'b5\'c4\'b5\'e3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf5 for\cf2 \'a0(i\'a0=\'a0\cf7 0\cf2 ;\'a0i\'a0<\'a0all_array.length;\'a0i++)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0e\'a0=\'a0all_array[i];\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b2\'bb\'ca\'c7\'b5\'b1\'c7\'b0\'b5\'e3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf5 if\cf2 \'a0(r\'a0!==\'a0e\'a0&&\'a0\cf5 null\cf2 \'a0!==\'a0e.x\'a0&&\'a0\cf5 null\cf2 \'a0!==\'a0e.y)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0x_dist\'a0=\'a0r.x\'a0-\'a0e.x,\'a0\cf4 //x
+\f1 \'d6\'e1\'be\'e0\'c0\'eb
+\f0 \'a0l\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0y_dist\'a0=\'a0r.y\'a0-\'a0e.y,\'a0\cf4 //y
+\f1 \'d6\'e1\'be\'e0\'c0\'eb
+\f0 \'a0n\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0dist\'a0=\'a0x_dist\'a0*\'a0x_dist\'a0+\'a0y_dist\'a0*\'a0y_dist;\'a0\cf4 //
+\f1 \'d7\'dc\'be\'e0\'c0\'eb
+\f0 ,\'a0m\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0dist\'a0<\'a0e.max\'a0&&\'a0(e\'a0===\'a0current_point\'a0&&\'a0dist\'a0>=\'a0e.max\'a0/\'a0\cf7 2\cf2 \'a0&&\'a0(r.x\'a0-=\'a0\cf7 0.03\cf2 \'a0*\'a0x_dist,\'a0r.y\'a0-=\'a0\cf7 0.03\cf2 \'a0*\'a0y_dist),\'a0\cf4 //
+\f1 \'bf\'bf\'bd\'fc\'b5\'c4\'ca\'b1\'ba\'f2\'bc\'d3\'cb\'d9
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0d\'a0=\'a0(e.max\'a0-\'a0dist)\'a0/\'a0e.max,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.beginPath(),\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.lineWidth\'a0=\'a0d\'a0/\'a0\cf7 2\cf2 ,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.strokeStyle\'a0=\'a0\cf6 "rgba("\cf2 \'a0+\'a0config.c\'a0+\'a0\cf6 ","\cf2 \'a0+\'a0(d\'a0+\'a0\cf7 0.2\cf2 )\'a0+\'a0\cf6 ")"\cf2 ,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.moveTo(r.x,\'a0r.y),\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.lineTo(e.x,\'a0e.y),\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context.stroke());\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0all_array.splice(all_array.indexOf(r),\'a0\cf7 1\cf2 );\
+\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}),\'a0frame_func(draw_canvas);\
+\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b4\'b4\'bd\'a8\'bb\'ad\'b2\'bc\'a3\'ac\'b2\'a2\'cc\'ed\'bc\'d3\'b5\'bd
+\f0 body
+\f1 \'d6\'d0
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0var\'a0the_canvas\'a0=\'a0document.createElement(\cf6 "canvas"\cf2 ),\'a0\cf4 //
+\f1 \'bb\'ad\'b2\'bc
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0config\'a0=\'a0get_config_option(),\'a0\cf4 //
+\f1 \'c5\'e4\'d6\'c3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0canvas_id\'a0=\'a0\cf6 "c_n"\cf2 \'a0+\'a0config.l,\'a0\cf4 //canvas\'a0id\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0context\'a0=\'a0the_canvas.getContext(\cf6 "2d"\cf2 ),\'a0canvas_width,\'a0canvas_height,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0frame_func\'a0=\'a0window.requestAnimationFrame\'a0||\'a0window.webkitRequestAnimationFrame\'a0||\'a0window.mozRequestAnimationFrame\'a0||\'a0window.oRequestAnimationFrame\'a0||\'a0window.msRequestAnimationFrame\'a0||\'a0function(func)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0window.setTimeout(func,\'a0\cf7 1000\cf2 \'a0/\'a0\cf7 45\cf2 );\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\},\'a0random\'a0=\'a0Math.random,\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0current_point\'a0=\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0x:\'a0\cf5 null\cf2 ,\'a0\cf4 //
+\f1 \'b5\'b1\'c7\'b0\'ca\'f3\'b1\'ea
+\f0 x\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0y:\'a0\cf5 null\cf2 ,\'a0\cf4 //
+\f1 \'b5\'b1\'c7\'b0\'ca\'f3\'b1\'ea
+\f0 y\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0max:\'a0\cf7 20000\cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\};\
+\'a0\'a0\'a0\'a0the_canvas.id\'a0=\'a0canvas_id;\
+\'a0\'a0\'a0\'a0the_canvas.style.cssText\'a0=\'a0\cf6 "position:fixed;top:0;left:0;z-index:"\cf2 \'a0+\'a0config.z\'a0+\'a0\cf6 ";opacity:"\cf2 \'a0+\'a0config.o;\
+\'a0\'a0\'a0\'a0get_by_tagname(\cf6 "body"\cf2 )[\cf7 0\cf2 ].appendChild(the_canvas);\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b3\'f5\'ca\'bc\'bb\'af\'bb\'ad\'b2\'bc\'b4\'f3\'d0\'a1
+\f0 \cf2 \
+\'a0\
+\'a0\'a0\'a0\'a0set_canvas_size(),\'a0window.onresize\'a0=\'a0set_canvas_size;\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'b5\'b1\'ca\'b1\'ca\'f3\'b1\'ea\'ce\'bb\'d6\'c3\'b4\'e6\'b4\'a2\'a3\'ac\'c0\'eb\'bf\'aa\'b5\'c4\'ca\'b1\'ba\'f2\'a3\'ac\'ca\'cd\'b7\'c5\'b5\'b1\'c7\'b0\'ce\'bb\'d6\'c3\'d0\'c5\'cf\'a2
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0window.onmousemove\'a0=\'a0function(e)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0e\'a0=\'a0e\'a0||\'a0window.event,\'a0current_point.x\'a0=\'a0e.clientX,\'a0current_point.y\'a0=\'a0e.clientY;\
+\'a0\'a0\'a0\'a0\},\'a0window.onmouseout\'a0=\'a0function()\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0current_point.x\'a0=\'a0\cf5 null\cf2 ,\'a0current_point.y\'a0=\'a0\cf5 null\cf2 ;\
+\'a0\'a0\'a0\'a0\};\
+\'a0\'a0\'a0\'a0\cf4 //
+\f1 \'cb\'e6\'bb\'fa\'c9\'fa\'b3\'c9
+\f0 config.n
+\f1 \'cc\'f5\'cf\'df\'ce\'bb\'d6\'c3\'d0\'c5\'cf\'a2
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\cf5 for\cf2 \'a0(var\'a0random_lines\'a0=\'a0[],\'a0i\'a0=\'a0\cf7 0\cf2 ;\'a0config.n\'a0>\'a0i;\'a0i++)\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0var\'a0x\'a0=\'a0random()\'a0*\'a0canvas_width,\'a0\cf4 //
+\f1 \'cb\'e6\'bb\'fa\'ce\'bb\'d6\'c3
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0y\'a0=\'a0random()\'a0*\'a0canvas_height,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0xa\'a0=\'a0\cf7 2\cf2 \'a0*\'a0random()\'a0-\'a0\cf7 1\cf2 ,\'a0\cf4 //
+\f1 \'cb\'e6\'bb\'fa\'d4\'cb\'b6\'af\'b7\'bd\'cf\'f2
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0ya\'a0=\'a0\cf7 2\cf2 \'a0*\'a0random()\'a0-\'a0\cf7 1\cf2 ;\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0random_lines.push(\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0x:\'a0x,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0y:\'a0y,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0xa:\'a0xa,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0ya:\'a0ya,\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0max:\'a0\cf7 6000\cf2 \'a0\cf4 //
+\f1 \'d5\'b4\'b8\'bd\'be\'e0\'c0\'eb
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\});\
+\'a0\'a0\'a0\'a0\}\
+\'a0\'a0\'a0\'a0\cf4 //0.1
+\f1 \'c3\'eb\'ba\'f3\'bb\'e6\'d6\'c6
+\f0 \cf2 \
+\'a0\'a0\'a0\'a0setTimeout(function()\'a0\{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0draw_canvas();\
+\'a0\'a0\'a0\'a0\},\'a0\cf7 100\cf2 );\
+\}();}
